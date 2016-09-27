@@ -82,5 +82,30 @@ columns in which specific variables can be found, whether they are character or 
  - fBodyBodyGyroJerkMag-mean(): num  
  - fBodyBodyGyroJerkMag-std() : num 
 
+#### Steps of Analysis
+
+- Download data set and and save zip file
+- Remove files not needed, keep files with needed variables
+- Read in activity labels
+- Read in features tables
+- Read in Subjects Test Dataset
+- Rename Column as "Subject_number"
+- Read in x variable for test dataset
+- Read in y variable for test dataset
+- Read in Subject numbers for Training data set
+- Read in x variable for training dataset
+- Read in y variable for training dataset
+- Add features to column variables to the x variable data frames
+- Remove all column variables not mean or std from both training and test dataset
+- Activity Labels to Y Variable
+- Bind the columns of the test and training sets
+- rename column 2 so we can merge effectively
+- Row bind the dataset
+- Load TIDYR PACKAGE to build a tidy dataset
+- Build a tidy data set labelled tidy_data
+- write new tidydata dataframe to file "tidy_data.txt"
+
+
+
 #### Citation
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
